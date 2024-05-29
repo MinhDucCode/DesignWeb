@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1227;
+    color: #f9f9f9; /* Đổi màu chữ để dễ đọc hơn trên nền tối */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.sidebar {
+    background-color: #1a1227;
+    color: #f9f9f9; /* Đổi màu chữ để dễ đọc hơn trên nền tối */
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar nav a {
+    color: #f9f9f9; /* Màu chữ trắng để dễ đọc hơn trên nền tối */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.sidebar nav a:hover {
+    background-color: #333; /* Màu nền khi hover để tương phản tốt hơn */
+}
+
+/* Định vị cho nút đăng nhập */
+.login-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #70018e; /* Màu nền cho nút đăng nhập */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #53006a; /* Màu nền khi hover cho nút đăng nhập */
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 220px; /* Để tránh sidebar */
+    margin-top: 20px; /* Để tránh nút đăng nhập */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #007bff; /* Màu xanh để nổi bật trên nền tối */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h {
+    color: #c33be8;
+}

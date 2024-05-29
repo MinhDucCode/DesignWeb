@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Game - GameOnline</title>
+    <link rel="stylesheet" href="./style/game.css">
+    <style>
+        /* Thêm CSS mới cho trang quản lý game */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        #add-game-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #add-game-btn:hover {
+            background-color: #555;
+        }
+
+        #game-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quản Lý Game - GameOnline</h1>
+        <nav>
+            <a href="../index.html">Trang Chủ</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="controls">
+                <button id="add-game-btn">Thêm Game</button>
+            </div>
+            <div id="game-list">
+                <!-- Danh sách game sẽ được hiển thị bằng JavaScript -->
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/game.js"></script>
+</body>
+</html>
